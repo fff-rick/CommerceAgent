@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">CommerceAgent 总体架构</title>
+  <desc id="desc">买家通过 React 页面和 AG-UI 连接 FastAPI，由 MainAgent 协调检索、知识、偏好和交易工具，并将状态持久化。</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#173f34" flood-opacity=".1"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#7d9a8c"/></marker>
+    <style>
+      .title{font:700 28px Inter,"Noto Sans SC",sans-serif;fill:#173f34}.sub{font:400 15px Inter,"Noto Sans SC",sans-serif;fill:#6d7f76}.h{font:700 18px Inter,"Noto Sans SC",sans-serif;fill:#173f34}.t{font:400 14px Inter,"Noto Sans SC",sans-serif;fill:#61736a}.small{font:600 13px Inter,"Noto Sans SC",sans-serif;fill:#587066}.line{stroke:#7d9a8c;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="640" rx="24" fill="#fbfaf6"/>
+  <text x="60" y="62" class="title">从一句需求，到可确认的选购结果</text>
+  <text x="60" y="91" class="sub">对话、工具与业务状态沿同一条可恢复的事件链协作</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="150" width="190" height="112" rx="18" fill="#fff" stroke="#dce5dd"/>
+    <circle cx="98" cy="188" r="17" fill="#dfeadf"/><text x="92" y="194" class="h">人</text>
+    <text x="126" y="192" class="h">买家</text><text x="88" y="226" class="t">描述需求 · 比较 · 审批</text>
+    <rect x="330" y="150" width="210" height="112" rx="18" fill="#eef3ea" stroke="#cfdccd"/>
+    <text x="365" y="190" class="h">React 选购页面</text><text x="365" y="224" class="t">对话 · 商品卡 · 表单</text>
+    <rect x="620" y="150" width="210" height="112" rx="18" fill="#e4eee8" stroke="#c3d6ca"/>
+    <text x="660" y="190" class="h">FastAPI / AG-UI</text><text x="660" y="224" class="t">SSE · 运行日志 · 恢复</text>
+    <rect x="910" y="150" width="230" height="112" rx="18" fill="#174d3d"/>
+    <text x="960" y="190" style="font:700 18px Inter,'Noto Sans SC',sans-serif;fill:#fff">MainAgent</text><text x="948" y="224" style="font:400 14px Inter,'Noto Sans SC',sans-serif;fill:#d8e7df">理解 · 调度 · 汇总</text>
+  </g>
+  <path d="M250 206 H330" class="line"/><path d="M540 206 H620" class="line"/><path d="M830 206 H910" class="line"/>
+  <text x="558" y="188" class="small">事件流</text><text x="846" y="188" class="small">上下文</text>
+
+  <path d="M1025 262 V318 H180 V350" class="line"/><path d="M1025 318 H465 V350" class="line"/><path d="M1025 318 H750 V350" class="line"/><path d="M1025 318 V350" class="line"/>
+  <g filter="url(#shadow)">
+    <rect x="60" y="350" width="240" height="142" rx="18" fill="#fff" stroke="#dce5dd"/>
+    <text x="91" y="390" class="h">商品与知识检索</text><text x="91" y="422" class="t">目录过滤 · BM25 · Qdrant</text><text x="91" y="450" class="t">RRF 融合 · 专用 reranker</text>
+    <rect x="345" y="350" width="240" height="142" rx="18" fill="#fff" stroke="#dce5dd"/>
+    <text x="376" y="390" class="h">偏好与 Skill</text><text x="376" y="422" class="t">长期偏好 · 语义召回</text><text x="376" y="450" class="t">个人选购流程 · 版本记录</text>
+    <rect x="630" y="350" width="240" height="142" rx="18" fill="#fff" stroke="#dce5dd"/>
+    <text x="661" y="390" class="h">审批与交易</text><text x="661" y="422" class="t">报价确认 · 幂等执行</text><text x="661" y="450" class="t">订单与库存事务</text>
+    <rect x="915" y="350" width="225" height="142" rx="18" fill="#fff" stroke="#dce5dd"/>
+    <text x="946" y="390" class="h">持久化与观测</text><text x="946" y="422" class="t">SQLite · Redis</text><text x="946" y="450" class="t">OpenTelemetry · Langfuse</text>
+  </g>
+  <rect x="60" y="544" width="1080" height="50" rx="12" fill="#eaf0e7"/>
+  <text x="600" y="575" text-anchor="middle" class="small">AgentScope 2.x 编排 · OpenAI 兼容模型 · Python + TypeScript</text>
+</svg>

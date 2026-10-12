@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">CommerceAgent 选购工作流</title><desc id="desc">从自然语言需求开始，依次澄清、检索、比较、确认，最终生成订单。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#8ba094"/></marker><filter id="s" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dy="6" stdDeviation="7" flood-color="#173f34" flood-opacity=".1"/></filter><style>.h{font:700 18px Inter,"Noto Sans SC",sans-serif;fill:#173f34}.n{font:700 14px Inter,sans-serif;fill:#fff}.t{font:400 13px Inter,"Noto Sans SC",sans-serif;fill:#718078}.l{stroke:#8ba094;stroke-width:2;marker-end:url(#a)}</style></defs>
+  <rect width="1200" height="300" rx="22" fill="#fbfaf6"/><text x="50" y="54" class="h">一轮完整选购</text><text x="50" y="80" class="t">关键条件由代码校验，高风险操作留给人确认</text>
+  <g filter="url(#s)">
+    <g transform="translate(45 122)"><rect width="150" height="104" rx="16" fill="#fff" stroke="#dce5dd"/><circle cx="30" cy="31" r="16" fill="#174d3d"/><text x="26" y="36" class="n">1</text><text x="55" y="36" class="h">描述需求</text><text x="22" y="72" class="t">预算、用途、偏好</text></g>
+    <g transform="translate(235 122)"><rect width="150" height="104" rx="16" fill="#fff" stroke="#dce5dd"/><circle cx="30" cy="31" r="16" fill="#174d3d"/><text x="26" y="36" class="n">2</text><text x="55" y="36" class="h">动态澄清</text><text x="22" y="72" class="t">只补问缺失条件</text></g>
+    <g transform="translate(425 122)"><rect width="150" height="104" rx="16" fill="#fff" stroke="#dce5dd"/><circle cx="30" cy="31" r="16" fill="#174d3d"/><text x="26" y="36" class="n">3</text><text x="55" y="36" class="h">混合检索</text><text x="22" y="72" class="t">过滤、召回与精排</text></g>
+    <g transform="translate(615 122)"><rect width="150" height="104" rx="16" fill="#fff" stroke="#dce5dd"/><circle cx="30" cy="31" r="16" fill="#174d3d"/><text x="26" y="36" class="n">4</text><text x="55" y="36" class="h">比较候选</text><text x="22" y="72" class="t">商品卡与规格证据</text></g>
+    <g transform="translate(805 122)"><rect width="150" height="104" rx="16" fill="#fff" stroke="#dce5dd"/><circle cx="30" cy="31" r="16" fill="#174d3d"/><text x="26" y="36" class="n">5</text><text x="55" y="36" class="h">人工确认</text><text x="22" y="72" class="t">核对报价与变更</text></g>
+    <g transform="translate(995 122)"><rect width="160" height="104" rx="16" fill="#174d3d"/><circle cx="30" cy="31" r="16" fill="#dfeadf"/><text x="26" y="36" style="font:700 14px Inter,sans-serif;fill:#174d3d">6</text><text x="55" y="36" style="font:700 18px Inter,'Noto Sans SC',sans-serif;fill:#fff">事务执行</text><text x="22" y="72" style="font:400 13px Inter,'Noto Sans SC',sans-serif;fill:#d8e7df">订单、库存与幂等</text></g>
+  </g>
+  <path d="M195 174H235M385 174H425M575 174H615M765 174H805M955 174H995" class="l"/>
+</svg>

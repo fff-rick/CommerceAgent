@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">CommerceAgent 运行恢复机制</title><desc id="desc">运行事件持续写入服务端，浏览器断线后使用游标重连，刷新页面也能恢复会话和审批状态。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#8ba094"/></marker><style>.h{font:700 19px Inter,"Noto Sans SC",sans-serif;fill:#173f34}.t{font:400 14px Inter,"Noto Sans SC",sans-serif;fill:#687b71}.l{stroke:#8ba094;stroke-width:2.4;fill:none;marker-end:url(#a)}</style></defs>
+  <rect width="1200" height="300" rx="22" fill="#fbfaf6"/>
+  <text x="50" y="54" class="h">刷新与断线，不丢掉已经完成的工作</text><text x="50" y="82" class="t">网页订阅和服务端运行彼此解耦，只有“停止”操作才明确取消任务</text>
+  <rect x="70" y="125" width="220" height="100" rx="17" fill="#fff" stroke="#dce5dd"/><text x="105" y="166" class="h">Agent 持续运行</text><text x="105" y="197" class="t">模型与工具继续执行</text>
+  <rect x="380" y="125" width="220" height="100" rx="17" fill="#eaf0e7" stroke="#cfdbd1"/><text x="414" y="166" class="h">事件持续落盘</text><text x="414" y="197" class="t">消息、状态与审批记录</text>
+  <rect x="690" y="125" width="200" height="100" rx="17" fill="#fff" stroke="#dce5dd"/><text x="727" y="166" class="h">游标重连</text><text x="727" y="197" class="t">补齐断线期间事件</text>
+  <rect x="980" y="125" width="160" height="100" rx="17" fill="#174d3d"/><text x="1018" y="166" style="font:700 19px Inter,'Noto Sans SC',sans-serif;fill:#fff">恢复页面</text><text x="1006" y="197" style="font:400 14px Inter,'Noto Sans SC',sans-serif;fill:#d8e7df">继续对话与确认</text>
+  <path d="M290 175H380M600 175H690M890 175H980" class="l"/><path d="M790 125C790 74 490 74 490 125" class="l"/><text x="640" y="108" text-anchor="middle" class="t">刷新 / 网络中断</text>
+</svg>
